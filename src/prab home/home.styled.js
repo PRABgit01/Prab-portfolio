@@ -56,7 +56,7 @@ export const AnimeButton = styled.button`
   color: white;
   font-size: large;
   border-radius: 12%;
-  background: url(https://i.pinimg.com/originals/4a/62/47/4a6247b94dab1aec74989857691a48b7.gif);
+  background: url(https://i.pinimg.com/originals/33/f9/f2/33f9f2691b305a7bb61ff7ff835e6ca3.gif);
   background-size: cover, 100%;
   padding: 10px;
   position: relative;
@@ -68,27 +68,13 @@ export const AnimeButton = styled.button`
   }
 `;
 
-export const AnimatedText = styled.h1`
-  background: transparent;
-  padding: 10px 20px;
-  color: #fff;
-  cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
+export const TextBox = styled.div`
+  width: 100%;
+  min-width: 400px;
+`;
 
-  animation: infinite steps(12) typing 2s, cursor 4s step-end;
-
-  @keyframes cursor {
-    50% {
-      border: transparent;
-    }
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+export const TypeEffect = styled.span`
+  color: #7C0200;
+  font-weight: bold;
+  font-size: 5rem;
 `;

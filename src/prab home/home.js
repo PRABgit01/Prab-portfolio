@@ -1,19 +1,17 @@
 import React from "react";
-import Anime from "../assets/jujustus.mp4";
 import kaisen from "../assets/kaisenbro.mp4";
+import { Cursor, Typewriter } from "react-simple-typewriter";
+
 import {
   AnimatedButton,
   AnimatedText,
   AnimeButton,
   BackGroundVideo,
   LeftContainer,
+  TextBox,
   TextContainer,
-  TwitchContainer,
-  TwitchSpan,
-  TwitchText,
+  TypeEffect,
 } from "./home.styled";
-
-// ... (styled components and keyframes)
 
 export function PrabHome() {
   return (
@@ -23,12 +21,34 @@ export function PrabHome() {
       </BackGroundVideo>
       <TextContainer>
         <LeftContainer>
-          <AnimatedText>prabhanjan</AnimatedText>
-          {/* <AnimatedText>portfolio </AnimatedText> */}
-
-          <AnimeButton>my world 🗺</AnimeButton>
+          <TextBox>
+            <span>
+              <TypeEffect>
+                <Typewriter
+                  words={["Prabhanjan", "develop", "Code", "Sleep", "Repeat!"]}
+                  loop={Infinity}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </TypeEffect>
+            </span>
+          </TextBox>
+          <AnimeButton>
+            <span style={{ color: "white", fontWeight: "bold" }}>
+              <Typewriter
+                words={["click ", "me ", "me"]}
+                loop={Infinity}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                delaySpeed={1000}
+              />
+            </span>
+          </AnimeButton>
         </LeftContainer>
-        {/* <AnimatedButton>clikc me</AnimatedButton> */}
       </TextContainer>
     </>
   );
